@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML,CSS,Javascript" />
+    <meta name="author" content="vakho" />
+    <link rel="stylesheet" href="./main.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"
+      integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <title>GENERATE Password</title>
+  </head>
+  <body>
+    <div class="password__container">
+      <div class="password__header">
+        <div class="password">
+          <span id="password"></span>
+          <button id="copy">Copy</button>
+        </div>
+      </div>
+      <div class="password__body">
+        <div class="form-control">
+          <label for="length">Length</label>
+          <input id="length" min="6" max="16" value="10" type="number" />
+        </div>
+        <div class="form-control">
+          <label for="upper">Includes uppercase letters</label>
+          <input id="upper" type="checkbox" />
+        </div>
+        <div class="form-control">
+          <label for="lower">Includes lowercase letters</label>
+          <input id="lower" type="checkbox" />
+        </div>
+        <div class="form-control">
+          <label for="number">Includes numbers</label>
+          <input id="number" type="checkbox" />
+        </div>
+        <div class="form-control">
+          <label for="symbol">Includes symbols</label>
+          <input id="symbol" type="checkbox" />
+        </div>
+        <button id="generate" class="generate">GENERATE</button>
+      </div>
+    </div>
+    <p>
+      Length should be between 6-16 - Which might include Symbols / UpperCase
+      Letter / LowerCase Letters / Numbers
+    </p>
+  </body>
+  <script defer src="./main.js"></script>
+</html>
